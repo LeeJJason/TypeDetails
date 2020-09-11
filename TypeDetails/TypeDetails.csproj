@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MemberInfoModel\MemberInfoModelRunner.cs" />
     <Compile Include="ModelRunner.cs" />
     <Compile Include="TypeModel\Field\FieldDelimiter.cs" />
     <Compile Include="TypeModel\Field\FieldEmptyTypes.cs" />
@@ -67,8 +68,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MemberInfo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
