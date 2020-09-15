@@ -24,5 +24,10 @@ namespace TypeDetails
         }
 
         public abstract void Run();
+
+        public void Run<T>() where T : Runner, new()
+        {
+            new T().Run();
+        }
     }
 }

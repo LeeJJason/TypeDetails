@@ -19,9 +19,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +54,8 @@
     <Compile Include="TypeModel\Field\FieldRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeModel\Method\MethodEquals.cs" />
+    <Compile Include="TypeModel\Method\MethodRunner.cs" />
     <Compile Include="TypeModel\Property\PropertyAssembly.cs" />
     <Compile Include="TypeModel\Property\PropertyAttributes.cs" />
     <Compile Include="TypeModel\Property\PropertyBaseType.cs" />
@@ -61,13 +64,64 @@
     <Compile Include="TypeModel\Property\PropertyDeclaringType.cs" />
     <Compile Include="TypeModel\Property\PropertyDefaultBinder.cs" />
     <Compile Include="TypeModel\Property\PropertyFullName.cs" />
+    <Compile Include="TypeModel\Property\PropertyGenericParameterAttributes.cs" />
+    <Compile Include="TypeModel\Property\PropertyGenericParameterPosition.cs" />
+    <Compile Include="TypeModel\Property\PropertyGenericTypeArguments.cs" />
+    <Compile Include="TypeModel\Property\PropertyGUID.cs" />
+    <Compile Include="TypeModel\Property\PropertyHasElementType.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsAbstract.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsAnsiClass.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsArray.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsAutoClass.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsAutoLayout.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsByRef.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsClass.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsCOMObject.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsConstructedGenericType.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsContextful.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsEnum.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsExplicitLayout.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsGenericParameter.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsGenericType.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsGenericTypeDefinition.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsImport.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsInterface.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsLayoutSequential.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsMarshalByRef.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNested.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedAssembly.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedFamANDAssem.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedFamily.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedFamORAssem.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedPrivate.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNestedPublic.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsNotPublic.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsPointer.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsPrimitive.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsPublic.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSealed.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSecurityCritical.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSecuritySafeCritical.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSecurityTransparent.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSerializable.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsSpecialName.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsValueType.cs" />
+    <Compile Include="TypeModel\Property\PropertyIsVisible.cs" />
+    <Compile Include="TypeModel\Property\PropertyMemberType.cs" />
+    <Compile Include="TypeModel\Property\PropertyModule.cs" />
+    <Compile Include="TypeModel\Property\PropertyNamespace.cs" />
+    <Compile Include="TypeModel\Property\PropertyReflectedType.cs" />
     <Compile Include="TypeModel\Property\PropertyRunner.cs" />
     <Compile Include="Runner.cs" />
+    <Compile Include="TypeModel\Property\PropertyStructLayoutAttribute.cs" />
+    <Compile Include="TypeModel\Property\PropertyTypeHandle.cs" />
     <Compile Include="TypeModel\TypeModelRunner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MemberInfoModel\Field\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

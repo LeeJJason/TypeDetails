@@ -35,6 +35,10 @@ namespace TypeDetails.TypeModel.Property
             Console.WriteLine("\tType.IsGenericType : ");
             Console.WriteLine("\tpublic virtual bool IsGenericType { get; }");
             Console.WriteLine("\t获取一个值，该值指示当前类型是否是泛型类型;");
+
+            Console.WriteLine("\tType.IsGenericParameter : ");
+            Console.WriteLine("\tpublic virtual bool IsGenericParameter { get; }");
+            Console.WriteLine("\t获取一个值，该值指示当前 Type 是否表示泛型类型或方法的定义中的类型参数;");
         }
 
         public override void Run()
