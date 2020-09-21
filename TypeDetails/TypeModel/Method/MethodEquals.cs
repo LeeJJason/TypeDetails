@@ -42,9 +42,11 @@ namespace TypeDetails.TypeModel.Method
             Console.WriteLine("\t\t\ttypeof({0}).Equals(typeof({1})): {2}", a, b, a.Equals(b));
 
             Console.WriteLine("\t\tEquals (object o)");
+            int aa = 1;
             Type t = typeof(int);
             Object obj1 = typeof(int).GetTypeInfo();
             IsEqualTo(t, obj1);
+            Console.WriteLine("\t\t\t{0} = {1}: {2}", t.Name, aa, t.Equals(aa));
 
             Object obj2 = typeof(String);
             IsEqualTo(t, obj2);

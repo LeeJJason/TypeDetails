@@ -47,7 +47,7 @@ namespace TypeDetails.TypeModel
                 obj.Run();
             }
             */
-            Run<MethodEquals>();
+            Run<MethodFindMembers>();
         }
     }
 }

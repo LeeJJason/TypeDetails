@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingFlagsModel\BindingFlagsModelRunner.cs" />
+    <Compile Include="BindingFlagsModel\BindingFlagsRunner.cs" />
     <Compile Include="MemberInfoModel\MemberInfoModelRunner.cs" />
     <Compile Include="ModelRunner.cs" />
     <Compile Include="TypeModel\Field\FieldDelimiter.cs" />
@@ -55,7 +57,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeModel\Method\MethodEquals.cs" />
+    <Compile Include="TypeModel\Method\MethodFindMembers.cs" />
     <Compile Include="TypeModel\Method\MethodRunner.cs" />
+    <Compile Include="TypeModel\Method\MethonFindInterfaces.cs" />
     <Compile Include="TypeModel\Property\PropertyAssembly.cs" />
     <Compile Include="TypeModel\Property\PropertyAttributes.cs" />
     <Compile Include="TypeModel\Property\PropertyBaseType.cs" />

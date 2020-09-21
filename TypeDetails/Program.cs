@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using TypeDetails.BindingFlagsModel;
 using TypeDetails.TypeModel.Field;
 using TypeDetails.TypeModel.Property;
 
@@ -13,7 +14,8 @@ namespace TypeDetails
     {
         static void Main(string[] args)
         {
-            new TypeModel.TypeModelRunner().Run();
+            new BindingFlagsModelRunner().Run();
+            //new TypeModel.TypeModelRunner().Run();
         }
     }
 }
