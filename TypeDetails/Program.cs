@@ -14,8 +14,8 @@ namespace TypeDetails
     {
         static void Main(string[] args)
         {
-            new BindingFlagsModelRunner().Run();
-            //new TypeModel.TypeModelRunner().Run();
+            //new BindingFlagsModelRunner().Run();
+            new TypeModel.TypeModelRunner().Run();
         }
     }
 }
